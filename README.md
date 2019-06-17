@@ -1,9 +1,9 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Lab 26 - Component Based UI
 
-### Author: Student/Group Name
+### Author: Becky Peterson
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
