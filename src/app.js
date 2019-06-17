@@ -1,38 +1,44 @@
+
 import React from 'react';
 
-// Vinicio - this is just a different way of creating 'dummy components' with functions
-const Header = () => {
-  return (
-    <header>
-      <h1>Header</h1>
-    </header>
-  );
-};
+import Header from './classes/header';
+import Footer from './classes/footer';
 
-class Footer extends React.Component {
-  render() {
-    return <footer>&copy; 2018 Code Fellows</footer>;
-  }
-}
-
-class Main extends React.Component {
+class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      stuff: 0,
+      counter: 0,
     };
   }
 
   handleButtonClick = e => {
     e.preventDefault();
-    this.setState({ stuff: Math.floor(Math.random() * 20 + 1) });
+    this.setState({ counter: this.state.counter +1});
+  };
+
+  handleButtonClickDecrement = e => {
+    e.preventDefault();
+    this.setState({ counter: this.state.counter -1});
   };
 
   render() {
     return (
       <div>
-        <h4>{this.state.stuff}</h4>
+        <h4>{this.state.counter}</h4>
         <button onClick={this.handleButtonClick}>Click Me</button>
+        
+        <button onClick={this.handleButtonClickDecrement}>Click Me to Subtract</button>
+      </div>
+    );
+  }
+ //Becky's new stuff
+
+  renderDec() {
+    return (
+      <div>
+        <h4>{this.state.counter}</h4>
+        <button onDecClick={this.handleButtonClickDecrement}>Click Me to Subtract</button>
       </div>
     );
   }
@@ -43,7 +49,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <Main />
+        <Counter />
         <Footer />
       </React.Fragment>
     );
