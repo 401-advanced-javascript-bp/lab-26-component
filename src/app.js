@@ -26,19 +26,9 @@ class Counter extends React.Component {
     return (
       <div>
         <h4>{this.state.counter}</h4>
-        <button onClick={this.handleButtonClick}>Click Me</button>
+        <a href="#" onClick={this.handleButtonClick}>Click Me</a>
         
-        <button onClick={this.handleButtonClickDecrement}>Click Me to Subtract</button>
-      </div>
-    );
-  }
- //Becky's new stuff
-
-  renderDec() {
-    return (
-      <div>
-        <h4>{this.state.counter}</h4>
-        <button onDecClick={this.handleButtonClickDecrement}>Click Me to Subtract</button>
+        <a href="#" onClick={this.handleButtonClickDecrement}>!!!Pick Me to Subtract!!!</a>
       </div>
     );
   }
