@@ -1,0 +1,27 @@
+#root {
+    width: 960px;
+    background-color: red;
+    margin: auto;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        width: 100%;
+        h4 {
+            color: black;
+            margin: 40px;
+        }
+        a.increment {
+            text-decoration: none;
+            color: white;
+    
+        }
+        a.decrement {
+            text-decoration: none;
+            color: white;
+        }
+    
+    }
+}
