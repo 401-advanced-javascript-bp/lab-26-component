@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './app.js';
+import App from './App.js';
 
-class Main extends React.Component {
+class Counter extends React.Component {
   render() {
     return <App />;
   }
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<Main />, rootElement);
+ReactDOM.render(<Counter />, rootElement);
