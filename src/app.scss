@@ -1,26 +1,26 @@
 #root {
     width: 960px;
-    background-color: red;
+    background-color: #6153CC;
     margin: auto;
     div {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: green;
+        background-color: #A60067;
         width: 100%;
         h4 {
-            color: black;
+            color: #360A14;
             margin: 40px;
         }
         a.increment {
             text-decoration: none;
-            color: white;
+            color: #44FFD1;
     
         }
         a.decrement {
             text-decoration: none;
-            color: white;
+            color: #44FFD1;
         }
     
     }
